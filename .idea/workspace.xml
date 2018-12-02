@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1d78bd7-0b0f-46b8-8c0b-71819b2edc50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adduser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/game-caiquan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/position_argvs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/print1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/randpass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seq_fun.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stdfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/str_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/touch_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/while.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c1d78bd7-0b0f-46b8-8c0b-71819b2edc50" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +248,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="139" width="688" height="578" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19092123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
