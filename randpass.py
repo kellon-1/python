@@ -1,7 +1,15 @@
-import string,random,sys
+import string,random
 
 pass_list = string.ascii_letters + string.digits
-#调用string模块 大小写字母/特殊符号/数字
+
+#方法1
+result=[random.choice(pass_list) for i in range(8)]
+print(''.join(result))
+
+#方法2
+print(''.join([random.choice(string.digits+string.ascii_letters) for i in range(8)]))
+
+#方法3   调用string模块 大小写字母/特殊符号/数字
 def choice_pass(n=8):
     password=''
     for i in range(n):

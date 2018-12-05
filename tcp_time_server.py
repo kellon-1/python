@@ -1,5 +1,6 @@
 import socket
 from time import strftime
+import os
 
 
 class TcpTimeServer:
@@ -21,7 +22,18 @@ class TcpTimeServer:
     def mainloop(self):
         while True:
             cli_sock, cli_addr = self.serv.accept()
-            self.chat(cli_sock)
+            pid = os.fork()
+            if pid:
+                cli_sock.close()
+                while True:
+                #client退出时会产生一个僵尸进程，当有新client链接进来时开始处理僵尸进程
+                    pid=os.waitpid(-1,1)[0]  #有多个进程时总是优先处理僵尸进程
+                    if pid == 0:
+                        break
+            else:
+                self.serv.close()
+                self.chat(cli_sock)
+                exit()
         self.serv.close()
 
 

@@ -5,7 +5,7 @@ def check_md5(fname):
     m = hashlib.md5()    #创建一个对象
     with open(fname,'rb') as fobj:
         while True:
-            data = fobj.read(4096)    #读取4k数据
+            data = fobj.read(4096)    #读取4k数
             m.update(data)
             if not data:
                 break
