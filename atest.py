@@ -1,22 +1,22 @@
-import hashlib
+from email.mime.text import MIMEText
+from email.header import Header
+from smtplib import SMTP
+import getpass
 
-# def check_md5(fname):
-#     m = hashlib.md5()
-#     with open(fname, 'rb') as fobj:
-#         while True:
-#             data = fobj.read(4096)
-#             if not data:
-#                 break
-#             m.update(data)
-#     return m.hexdigest()
+def send_msg(host, pwd, sender, receivers, subject, msg):
+    message = MIMEText(msg, 'plain', 'utf8')
+    message['From'] = Header(sender, 'utf8')
+    message['To'] = Header(receivers[0], 'utf8')
+    message['Subject'] = Header(subject, 'utf8')
+    smtp = SMTP(host)
+    smtp.login(sender, pwd)
+    smtp.sendmail(sender, receivers, message.as_string())
 
-def check(fname):
-    m = hashlib.md5()
-    with open(fname,'rb') as fobj:
-        while True:
-            data = fobj.read(4096)
-            if not data:
-                break
-            m.update(data)
-    return m.hexdigest()
-print(check('/etc/hosts'))
+if __name__ == '__main__':
+    host = 'smtp.126.com'
+    pwd = getpass.getpass()
+    sender = 'huangjingpy@126.com'
+    receivers = ['huangjingpy@126.com']
+    subject = '邮件测试'
+    msg = 'Python邮件测试\r\n'
+    send_msg(host, pwd, sender, receivers, subject, msg)
