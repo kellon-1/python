@@ -1,0 +1,36 @@
+.container{
+    margin: auto;
+    width: 800px;
+    background: #cccccc;
+}
+.head{
+    text-align: center;
+    height: 80px;
+    background: #183726;
+}
+.nav{
+    height: 20px;
+    background: #6a536f;
+}
+.main{
+    height: 400px;
+}
+.left{
+    float: left;
+    width: 150px;
+    height: 400px;
+    background: #6f3918;
+}
+.right{
+    margin-left: 150px;
+    width: 600px;
+}
+.footer{
+    text-align: center;
+    height: 20px;
+    background: lightslategrey;
+}
+.bj{
+    font-style: initial;
+    font-variant-emoji: emoji;
+}
